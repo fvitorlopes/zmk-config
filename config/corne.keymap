@@ -14,16 +14,19 @@
 
     Base_layer {
       bindings = <
-        &kp ESCAPE      &kp Q       &kp W        &kp E       &kp R       &kp T                     &kp Y         &kp U        &kp I         &kp O         &kp P         &kp BACKSPACE 
-        &kp TAB         &kp A       &kp S        &kp D       &kp F       &kp G                     &kp H         &kp J        &kp K         &kp L         &kp SEMICOLON &kp RETURN 
-        &kp LEFT_SHIFT  &kp Z       &kp X        &kp C       &kp V       &kp B                     &kp N         &kp M        &kp COMMA     &kp PERIOD    &kp COLON     &kp SLASH 
-        &sk LEFT_CONTROL    &lt NUMBERS SPACE    &kp LEFT_GUI                                      &mo SYMBOLS   &lt NAVIGATION SPACE    &mo MOUSE 
+        &kp ESCAPE        &kp Q        &kp W          &kp E        &kp R         &kp T                     &kp Y           &kp U          &kp I          &kp O           &kp P           &kp BACKSPACE 
+        &kp TAB           &kp A        &kp S          &kp D        &kp F         &kp G                     &kp H           &kp J          &kp K          &kp L           &kp SEMICOLON   &kp RETURN 
+        &kp LEFT_SHIFT    &kp Z        &kp X          &kp C        &kp V         &kp B                     &kp N           &kp M          &kp COMMA      &kp PERIOD      &kp COLON       &kp SLASH 
+        &sk LEFT_CONTROL  &lt NUMBERS SPACE    &kp LEFT_GUI                                                &mo SYMBOLS     &lt NAVIGATION SPACE    &mo MOUSE 
       >;
     };
 
     Navigation_layer {
       bindings = <
-        &trans &none &none &kp UP &none &none &none &none &none &none &none &trans &trans &none &kp LEFT &kp DOWN &kp RIGHT &none &none &kp LEFT_SHIFT &kp LEFT_CONTROL &none &none &trans &kp LEFT_SHIFT &none &none &none &none &none &none &kp DEL &kp INSERT &none &none &trans &kp LEFT_CONTROL &none &none &none &none &none 
+        &trans           &none         &none         &kp UP        &none         &none                     &none          &none           &none          &none           &none           &trans
+        &trans           &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                     &none          &kp LEFT_SHIFT  &kp LEFT_CONTROL&none          &none           &trans 
+        &kp LEFT_SHIFT   &none         &none         &none         &none         &none                     &none          &kp DEL         &kp INSERT      &none          &none           &trans 
+        &kp LEFT_CONTROL &none         &none                                                               &none          &none           &none 
       >;
     };
 
