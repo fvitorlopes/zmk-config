@@ -6,7 +6,7 @@
 #define NAVIGATION 1
 #define MOUSE 2
 #define NUMBERS 3
-#define SYMBOLS 3
+#define SYMBOLS 4
 
 / {
   keymap {
