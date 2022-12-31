@@ -14,31 +14,25 @@
 
     Base_layer {
       bindings = <
-        &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE &kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp null &kp RETURN &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD &kp COLON &kp SLASH &sk LEFT_CONTROL &lt NUMBERS SPACE &kp LEFT_GUI &mo SYMBOLS &lt NAVIGATION SPACE &mo MOUSE 
+        &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE &kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH &kp ESCAPE &sk LEFT_CONTROL &lt NAVIGATION SPACE &kp LEFT_GUI &kp RETURN &mo NAVIGATION &kp RIGHT_ALT 
       >;
     };
 
-    Navigation_layer {
+    Lower_layer {
       bindings = <
-        &trans &none &none &kp UP &none &none &none &none &none &none &none &trans &trans &none &kp LEFT &kp DOWN &kp RIGHT &none &none &kp LEFT_SHIFT &kp LEFT_CONTROL &none &none &trans &kp LEFT_SHIFT &none &none &none &none &none &none &kp DEL &kp INSERT &none &none &trans &kp LEFT_CONTROL &none &none &none &none &none 
+        &kp TAB &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp BACKSPACE &bt BT_CLR &trans &trans &trans &trans &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &trans &trans &kp LEFT_SHIFT &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp LEFT_GUI &trans &kp RETURN &kp SPACE &trans &kp RIGHT_ALT 
       >;
     };
 
-    Mouse_layer {
+    Raise_layer {
       bindings = <
-        &none &none &kp F17 &kp F13 &none &none &kp F18 &kp PG_UP &none &kp PG_DN &none &none &none &none &kp F15 &kp F14 &kp F16 &none &kp F19 &kp F20 &kp F21 &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &kp F17 &none &none &none &none 
+        &kp TAB &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp BACKSPACE &kp LEFT_CONTROL &trans &trans &trans &trans &trans &kp MINUS &kp EQUAL &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSLASH &kp GRAVE &kp LEFT_SHIFT &trans &trans &trans &trans &trans &kp UNDERSCORE &kp PLUS &kp LEFT_BRACE &kp RIGHT_BRACE &kp PIPE &kp TILDE &kp LEFT_GUI &trans &kp SPACE &kp RETURN &trans &kp RIGHT_ALT 
       >;
     };
 
-    Numbers_layer {
+    mouse_layer {
       bindings = <
-        &trans &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &trans &trans &none &none &none &none &none &none &none &none &none &none &kp F12 &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &none &none &none &none &none &none 
-      >;
-    };
-
-    Symbols_layer {
-      bindings = <
-        &kp SINGLE_QUOTE &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp EQUAL &kp DOUBLE_QUOTES &kp TILDE &kp QUESTION &kp GRAVE &kp undefined &kp SLASH &kp PIPE &kp LEFT_BRACE &kp RIGHT_BRACE &kp MINUS &kp PLUS &kp UNDERSCORE &none &none &none &none &none &kp BACKSLASH &none &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LT &kp GT &none &none &none &none &none &none &none 
+        &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none &none 
       >;
     };
 
