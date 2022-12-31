@@ -12,8 +12,9 @@
   keymap {
     compatible = "zmk,keymap";
 
-    bindings = <
-        &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE &kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp null &kp RETURN &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD &kp COLON &kp SLASH &sk LEFT_CONTROL &lt NAVIGATION SPACE &kp LEFT_GUI &mo NAVIGATION &lt NAVIGATION SPACE &mo NAVIGATION 
+    Base_layer {
+      bindings = <
+        &kp ESCAPE &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE &kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH &kp ESCAPE &sk LEFT_CONTROL &lt NAVIGATION SPACE &kp LEFT_GUI &kp RETURN &mo NAVIGATION &kp RIGHT_ALT 
       >;
     };
 
