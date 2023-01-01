@@ -10,6 +10,19 @@
 #define SYMBOLS 3
 #define NUMBERS 4
 
+macros {
+    macro_name: macro_name {
+        label = "my_macro";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LSHFT>
+            , <&macro_tap &kp A &kp B &kp C>
+            , <&macro_release &kp LSHFT>
+            ;
+    };
+};
+
 
 / {
   keymap {
