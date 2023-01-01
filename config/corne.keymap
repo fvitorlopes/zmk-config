@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/outputs.h>
 
 
 #define BASE 0
@@ -10,19 +9,6 @@
 #define MOUSE 1
 #define SYMBOLS 3
 #define NUMBERS 4
-
-macros {
-    macro_name: macro_name {
-        label = "my_macro";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_press &kp LSHFT>
-            , <&macro_tap &kp A &kp B &kp C>
-            , <&macro_release &kp LSHFT>
-            ;
-    };
-};
 
 
 / {
