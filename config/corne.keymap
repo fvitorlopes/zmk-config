@@ -37,7 +37,7 @@
       bindings = <
         &trans           &none         &none         &kp UP        &none         &none                     &none          &none           &none          &none           &none           &trans
         &trans           &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                     &none          &kp LEFT_SHIFT  &kp LEFT_CONTROL&none          &none           &trans 
-        &kp LEFT_SHIFT   &none         &none         &none         &none         &none                     &none          &kp DEL         &kp INSERT      &none          &none           &reset 
+        &kp LEFT_SHIFT   &none         &none         &none         &none         &none                     &none          &kp DEL         &kp INSERT      &none          &none           &bootloader 
         &kp LEFT_CONTROL &none         &none                                                               &none          &none           &none 
       >;
     };
