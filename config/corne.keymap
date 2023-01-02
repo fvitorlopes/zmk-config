@@ -34,10 +34,10 @@
 
     Base_layer {
       bindings = <
-        &kp ESCAPE        &kp Q        &kp W          &kp E        &kp R         &kp T                     &kp Y           &kp U          &kp I          &kp O           &kp P           &kp BACKSPACE 
-        &kp TAB           &mt A RA(A)  &kp S          &kp D        &kp F         &kp G                     &kp H           &kp J          &kp K          &kp L           &kp SEMICOLON   &kp RETURN 
-        &kp LEFT_SHIFT    &kp Z        &kp X          &kp C        &kp V         &kp B                     &kp N           &kp M          &kp COMMA      &kp PERIOD      &kp COLON       &kp SLASH 
-        &sk LEFT_CONTROL  &lt NUMBERS SPACE    &kp LEFT_GUI                                                &mo SYMBOLS     &lt NAVIGATION SPACE    &mo MOUSE 
+        &kp ESCAPE        &mt RS(Q) Q  &mt RS(W) W    &mt RS(E) E    &mt RS(R) R     &mt RS(T) T               &mt RS(Y) Y     &mt RS(U) U      &mt RS(I) I          &mt RS(O) O           &mt RS(P) P     &kp BACKSPACE 
+        &kp TAB           &mt RS(A) A  &mt RS(S) S    &mt RS(D) D    &mt RS(F) F     &mt RS(G) G               &mt RS(H) H     &mt RS(J) J      &mt RS(K) K          &mt RS(L) L           &kp COLON       &kp RETURN 
+        &kp LEFT_SHIFT    &mt RS(Z) Z  &mt RS(X) X    &mt RS(C) C    &mt RS(V) V     &mt RS(B) B               &mt RS(N) N     &mt RS(M) M      &mt SLASH COMMA      &mt RS(SLASH) PERIOD  &kp COLON       &kp SLASH 
+        &sk LEFT_CONTROL  &lt NUMBERS SPACE    &kp LEFT_GUI                                                    &mo SYMBOLS     &lt NAVIGATION SPACE    &mo MOUSE 
       >;
     };
 
