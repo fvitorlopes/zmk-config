@@ -10,6 +10,15 @@
 #define SYMBOLS 3
 #define NUMBERS 4
 
+
+&mmv {
+    time-to-max-speed-ms = <400>;
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+};
+
 &mt {
     tapping-term-ms = <400>;
 };
@@ -30,9 +39,9 @@
 
     Mouse_layer {
       bindings = <
-        &none     &none      &mkp LCLK       &mmv MOVE_UP     &mkp RCLK         &none                     &kp K_VOLUME_UP   &kp PAGE_UP     &none             &kp PAGE_DOWN   &none     &trans 
-        &trans    &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                     &kp K_VOLUME_DOWN &none           &none             &none           &none     &trans
-        &trans    &none      &none           &kp LC(LEFT)     &kp LC(RIGHT)     &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none           &none     &trans 
+        &none     &none      &mkp LCLK       &mmv MOVE_UP     &mkp RCLK         &none                     &kp K_VOLUME_UP   &mwh SCROLL_UP  &none             &mwh SCROLL_DOWN &none     &trans 
+        &trans    &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                     &kp K_VOLUME_DOWN &none           &none             &none            &none     &trans
+        &trans    &none      &none           &kp LC(LEFT)     &kp LC(RIGHT)     &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none            &none     &trans 
         &trans    &mkp LCLK  &mkp RCLK                                                                    &none             &none           &none 
       >;
     };
