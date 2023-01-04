@@ -21,29 +21,29 @@
 
     Base_layer {
       bindings = <
-        &kp ESCAPE        &mt RS(Q) Q  &mt RS(W) W    &mt RS(E) E    &mt RS(R) R     &mt RS(T) T               &mt RS(Y) Y     &mt RS(U) U      &mt RS(I) I          &mt RS(O) O           &mt RS(P) P     &kp BACKSPACE 
-        &kp TAB           &mt RS(A) A  &mt RS(S) S    &mt RS(D) D    &mt RS(F) F     &mt RS(G) G               &mt RS(H) H     &mt RS(J) J      &mt RS(K) K          &mt RS(L) L           &kp COLON       &kp RETURN 
-        &kp LEFT_SHIFT    &mt RS(Z) Z  &mt RS(X) X    &mt RS(C) C    &mt RS(V) V     &mt RS(B) B               &mt RS(N) N     &mt RS(M) M      &mt SLASH COMMA      &mt RS(SLASH) PERIOD  &kp COLON       &kp RS(RETURN) 
+        &kp ESCAPE        &mt RS(Q) Q  &mt RS(W) W    &mt RS(E) E    &mt RS(R) R     &mt RS(T) T               &mt RS(Y) Y     &mt RS(U) U      &mt RS(I) I          &mt RS(O) O           &mt RS(P) P   &kp BACKSPACE 
+        &kp TAB           &mt RS(A) A  &mt RS(S) S    &mt RS(D) D    &mt RS(F) F     &mt RS(G) G               &mt RS(H) H     &mt RS(J) J      &mt RS(K) K          &mt RS(L) L           &kp COLON     &kp RETURN 
+        &kp LEFT_SHIFT    &mt RS(Z) Z  &mt RS(X) X    &mt RS(C) C    &mt RS(V) V     &mt RS(B) B               &mt RS(N) N     &mt RS(M) M      &mt SLASH COMMA      &mt RS(SLASH) PERIOD  &kp COLON     &kp RS(RETURN) 
         &sk LEFT_CONTROL  &lt NUMBERS SPACE    &kp LEFT_GUI                                                    &mo SYMBOLS     &lt NAVIGATION SPACE    &mo MOUSE 
       >;
     };
 
     Mouse_layer {
       bindings = <
-        &none        &none        &mkp LCLK       &mmv MOVE_UP       &mkp RCLK          &none                     &kp K_VOLUME_UP   &kp PAGE_UP     &none             &kp PAGE_DOWN   &none            &trans 
-        &trans       &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT    &none                     &kp K_VOLUME_DOWN &none           &none             &none           &none            &trans
-        &trans       &none        &none           &kp LC(LEFT)       &kp LC(RIGHT)      &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none           &none            &trans 
-        &trans       &mkp LCLK    &mkp RCLK                                                                       &none             &none           &none 
+        &none     &none      &mkp LCLK       &mmv MOVE_UP     &mkp RCLK         &none                     &kp K_VOLUME_UP   &kp PAGE_UP     &none             &kp PAGE_DOWN   &none     &trans 
+        &trans    &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                     &kp K_VOLUME_DOWN &none           &none             &none           &none     &trans
+        &trans    &none      &none           &kp LC(LEFT)     &kp LC(RIGHT)     &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none           &none     &trans 
+        &trans    &mkp LCLK  &mkp RCLK                                                                    &none             &none           &none 
       >;
     };
 
 
     Navigation_layer {
       bindings = <
-        &trans           &none         &kp PAGE_DOWN &kp UP        &kp PAGE_UP   &none                     &none        &kp HOME        &none            &kp END    &none       &trans
-        &kp TAB          &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                     &none        &kp LEFT_SHIFT  &kp LEFT_CONTROL &none      &none       &trans 
-        &kp LEFT_SHIFT   &none         &none         &none         &none         &none                     &kp DEL      &kp INSERT      &none            &none      &none       &bootloader 
-        &kp LEFT_CONTROL &kp LEFT_GUI  &none                                                               &none        &none           &none 
+        &trans           &none         &kp PAGE_DOWN &kp UP      &kp PAGE_UP   &none                     &none      &kp HOME        &none            &kp END   &none     &trans
+        &kp TAB          &none         &kp LEFT      &kp DOWN    &kp RIGHT     &none                     &none      &kp LEFT_SHIFT  &kp LEFT_CONTROL &none     &none     &trans 
+        &kp LEFT_SHIFT   &none         &none         &none       &none         &none                     &kp DEL    &kp INSERT      &none            &none     &none     &bootloader 
+        &kp LEFT_CONTROL &kp LEFT_GUI  &none                                                             &none      &none           &none 
       >;
     };
 
