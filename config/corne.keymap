@@ -10,7 +10,6 @@
 #define SYMBOLS 3
 #define NUMBERS 4
  
-
 &mmv {
     time-to-max-speed-ms = <400>;
 };
@@ -21,6 +20,7 @@
 
 &mt {
     tapping-term-ms = <400>;
+    flavor = "hold-preferred";
 };
 
 / {
