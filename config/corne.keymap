@@ -11,23 +11,10 @@
 #define NUMBERS 4
 
 &mt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <250>;
 };
 
 / {
-
-  macros {
-      macro_name: macro_name {
-          label = "my_macro";
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              = <&macro_press &kp LSHFT>
-              , <&macro_tap &kp A &kp B &kp C>
-              , <&macro_release &kp LSHFT>
-              ;
-      };
-  };
 
   keymap {
     compatible = "zmk,keymap";
@@ -43,27 +30,28 @@
 
     Mouse_layer {
       bindings = <
-        &none            &none        &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &none                    &kp K_VOLUME_UP   &kp PAGE_UP     &none             &kp PAGE_DOWN   &none            &none 
-        &none            &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none                      &kp K_VOLUME_DOWN &none           &none             &none           &none            &none
-        &none            &none        &none           &none           &none           &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none           &none            &none 
-        &none            &mkp LCLK    &none                                                                  &none             &none           &none 
+        &none            &none        &mkp LCLK       &mmv MOVE_UP       &mkp RCLK          &none                     &kp K_VOLUME_UP   &kp PAGE_UP     &none             &kp PAGE_DOWN   &none            &none 
+        &none            &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT    &none                     &kp K_VOLUME_DOWN &none           &none             &none           &none            &none
+        &none            &none        &none           &kp LC(LEFT)       &kp LC(RIGHT)      &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none           &none            &none 
+        &none            &mkp LCLK    &mkp RCLK                                                                       &none             &none           &none 
       >;
     };
 
 
     Navigation_layer {
       bindings = <
-        &trans           &none         &kp PAGE_DOWN &kp UP        &kp PAGE_UP   &none                     &none          &none           &none            &none          &none           &trans
-        &trans           &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                     &none          &kp LEFT_SHIFT  &kp LEFT_CONTROL &none          &none           &trans 
+        &trans           &none         &kp PAGE_DOWN &kp UP        &kp PAGE_UP   &none                     &none          &kp HOME        &none            &kp END        &none           &trans
+        &kp TAB          &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none                     &none          &kp LEFT_SHIFT  &kp LEFT_CONTROL &none          &none           &trans 
         &kp LEFT_SHIFT   &none         &none         &none         &none         &none                     &kp DEL        &kp INSERT      &none            &none          &none           &bootloader 
         &kp LEFT_CONTROL &kp LEFT_GUI  &none                                                               &none          &none           &none 
       >;
     };
 
+
     Symbols_layer {
       bindings = <
         &kp SINGLE_QUOTE        &kp EXCLAMATION       &kp AT_SIGN       &kp HASH        &kp DOLLAR        &kp PERCENT                         &kp CARET       &kp AMPERSAND       &kp ASTERISK        &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS       &kp EQUAL
-        &kp DOUBLE_QUOTES       &kp TILDE             &kp RA(W)         &kp GRAVE       &macro_name       &kp SLASH                           &kp PIPE        &kp LEFT_BRACE      &kp RIGHT_BRACE     &kp MINUS              &kp PLUS                    &kp UNDERSCORE   
+        &kp DOUBLE_QUOTES       &kp TILDE             &kp RA(W)         &kp GRAVE       &none             &kp SLASH                           &kp PIPE        &kp LEFT_BRACE      &kp RIGHT_BRACE     &kp MINUS              &kp PLUS                    &kp UNDERSCORE   
         &none                   &none                 &none             &none           &none             &kp BACKSLASH                       &none           &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &kp LT                 &kp GT                      &none 
         &none                   &none                 &none                                                                                   &none           &none               &none 
       >;
