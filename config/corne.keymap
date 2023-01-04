@@ -20,7 +20,7 @@
 
 &mt {
     tapping-term-ms = <400>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
 };
 
 / {
