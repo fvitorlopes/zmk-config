@@ -30,10 +30,10 @@
 
     Mouse_layer {
       bindings = <
-        &none            &none        &mkp LCLK       &mmv MOVE_UP       &mkp RCLK          &none                     &kp K_VOLUME_UP   &kp PAGE_UP     &none             &kp PAGE_DOWN   &none            &none 
-        &none            &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT    &none                     &kp K_VOLUME_DOWN &none           &none             &none           &none            &none
-        &none            &none        &none           &kp LC(LEFT)       &kp LC(RIGHT)      &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none           &none            &none 
-        &none            &mkp LCLK    &mkp RCLK                                                                       &none             &none           &none 
+        &none            &none        &mkp LCLK       &mmv MOVE_UP       &mkp RCLK          &none                     &kp K_VOLUME_UP   &kp PAGE_UP     &none             &kp PAGE_DOWN   &none            &trans 
+        &trans           &none        &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_RIGHT    &none                     &kp K_VOLUME_DOWN &none           &none             &none           &none            &trans
+        &trans           &none        &none           &kp LC(LEFT)       &kp LC(RIGHT)      &none                     &kp K_MUTE        &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &none           &none            &trans 
+        &trans           &mkp LCLK    &mkp RCLK                                                                       &none             &none           &none 
       >;
     };
 
@@ -59,10 +59,10 @@
     
     Numbers_layer {
       bindings = <
-        &trans          &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6   &kp NUMBER_7    &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0   &trans 
-        &trans          &none          &kp RA(W)     &none         &none         &none                     &none          &none           &none           &none           &none          &none
-        &kp F1          &kp F2         &kp F3        &kp RA(F4)    &kp LC(F5)    &kp F6                    &kp F7         &kp F8          &kp F9          &kp F10         &kp F11        &kp F12 
-        &none           &none          &none                                                               &none          &none           &none 
+        &trans            &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0   &trans 
+        &kp DOUBLE_QUOTES &kp TILDE      &kp RA(W)     &kp GRAVE     &none         &kp SLASH                 &none         &none          &none          &none          &none          &trans
+        &kp F1            &kp F2         &kp F3        &kp RA(F4)    &kp LC(F5)    &kp F6                    &kp F7        &kp F8         &kp F9         &kp F10        &kp F11        &kp F12 
+        &trans            &none          &none                                                               &none         &none          &none 
       >;
     };
 
